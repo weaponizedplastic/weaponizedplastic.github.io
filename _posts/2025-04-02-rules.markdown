@@ -2,39 +2,44 @@
 layout: post
 title:  "WPFL Rules - 2025"
 date:   2025-04-02 12:01:44 -0400
-categories: jekyll update
+categories: rules
 ---
 
 # Rules (Draft as of 4/2/2025)
 
-## General Safety
+## A. General Safety
 
- * ALL ROBOTS MUST PASS SAFETY TECH.
- * Robots are only to be powered on INSIDE THE ARENA.
- * Spinning weapons must have a physical locking mechanism that prevents unintended startup.
- * Robots must be failsafe: when the radio is switched off, they must spin down all weapons and cease movement.
- * Batteries must be protected from direct hit. If at any time during a match, the battery becomes exposed the robot will immediately forfeit the match.
+ 1. **ALL ROBOTS MUST PASS SAFETY TECH**.
+ 2. Robots are only to be powered on **INSIDE THE ARENA**.
+ 3. Spinning weapons must have a physical locking mechanism that prevents unintended startup. The locking mechanism must be engaged at all times the robot is outside the arena.
+ 4. Robots must be failsafe: when the radio is switched off, they must spin down all weapons and cease all movement.
+ 5. Batteries must be protected from direct hit. If at any time during a match, the battery becomes exposed the robot will immediately forfeit the match.
 
-## General Specifications
+## B. General Specifications
 
- * ALL WEAPONS MUST BE 3D PRINTED - that means: NO LEXAN SHEET GOODS, NO METAL, NO FIRE/EXPLOSIVES, NO FLUIDS, NO EMPS. Don't be clever here - you'll fail safety tech.
- * Screws or metal reinforcing parts must comprise less than 10% (by weight) of any weapon. They must be recessed within the plastic part - for example, the screw body or head may not be designed to make contact with an opponents robot.
- * Screws or metal reinforcing parts must comprise less than 10% (by weight) of the robot.
- * Maximum Weight: 500g
- * Maximum Size: must fit in a box 30cm x 30cm x 30cm AT ALL TIMES
- * Radios must use the following frequencies: TODO.
+ 1. **ALL WEAPONS MUST BE 3D PRINTED** - that means: NO POLYCARBONATE SHEET GOODS, NO METAL, NO FIRE/EXPLOSIVES, NO FLUIDS, NO EMPS. Don't be clever here - you will fail safety tech.
+ 2. Metal hardware (screws, etc) must comprise less than 10% (by weight) of any weapon. Hardware must be recessed within the plastic part - for example, a screw body or head may not be designed to make contact with an opponents robot.
+ 3. The robot body should be primarily 3d printed. Thin plastic sheeting may be used to protect electronics and batteries, but should not exceed 1mm in thickness.
+ 4. Metal hardware (screws, etc) must comprise less than 10% (by weight) of the robot.
+ 5. Maximum Weight: 3 pounds (1.36kg)
+ 6. Maximum Size: must fit in a box 30cm x 30cm x 30cm AT ALL TIMES
+ 7. Radios must use the following frequencies: TODO.
 
-## Arena Specifications
+## C. Arena Specifications
 
- * Arena is approximately 4ft x 4ft x 2ft tall.
- * Floor is plywood, painted black. Walls are 1/4" Lexan.
+ 1. Arena is approximately 4ft x 4ft x 2ft tall.
+ 2. Floor is plywood, painted black. Walls are 1/4" Polycarbonate.
 
-## Combat Rules
+## D. Combat Rules
 
- * Each match will last for 3 minutes.
- * Brackets will generally be double elimination.
- * A competitor may forfeit at any time to prevent further damage to their robot.
- * If a robot appears incapacitated, judges will start a 10 second count down. If the robot fails to move during this 10 second window, it will forfeit the match.
- * A robot may only pin and hold a robot for 10 seconds. Judges will instruct competitors when they must separate.
- * In the event that both robot survive the full match, judges shall decide the winner.
- * We aim to keep the arena quite active and avoid downtime - competitors should keep this in mind when selecting battery chargers and quantity of batteries to bring. Competitors will have at least 15 minutes between matches, and will not have more than two matches within an hour block of time.
+ 1. Each match will last for 3 minutes.
+ 2. Brackets will generally be double elimination.
+ 3. A competitor may forfeit at any time to prevent further damage to their robot.
+ 4. If a robot appears incapacitated, judges will start a 10 second count down. If the robot fails to move during this 10 second window, it will forfeit the match.
+ 5. A robot may only pin and hold a robot for 15 seconds. Judges will instruct competitors when they must separate.
+ 6. In the event that both robot survive the full match, judges shall decide the winner.
+ 7. We aim to keep the arena quite active and avoid downtime - competitors should keep this in mind when selecting battery chargers and quantity of batteries to bring. Competitors will have at least 15 minutes between matches, and will not have more than two matches within an hour block of time.
+
+## E. Further Information
+
+ 1. Contact weaponizedplastic@gmail.com with any questions.
