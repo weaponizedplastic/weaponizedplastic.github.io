@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+<img src="/{{ site.baseurl }}assets/wpfl.png"/>
