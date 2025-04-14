@@ -5,7 +5,7 @@ date:   2025-04-02 12:01:44 -0400
 categories: rules
 ---
 
-# Rules (Draft as of 4/11/2025)
+# Rules (Draft as of 4/13/2025)
 
 ## A. General Safety
 
@@ -13,7 +13,7 @@ categories: rules
  2. **ALL ROBOTS MUST PASS SAFETY TECH**. Safety tech will verify that the robot meets the following three rules:
  3. Spinning weapons must have a physical locking mechanism that prevents unintended startup. The locking mechanism must be engaged at all times the robot is outside the arena.
  4. Robots must be failsafe: when the radio is switched off, they must spin down all weapons and cease all movement.
- 5. Batteries must be protected from direct hit. If at any time during a match, the battery becomes exposed the robot will immediately forfeit the match.
+ 5. Battery voltages must not exceed 50V. Batteries must be protected from direct hit. If at any time during a match, the battery becomes exposed the robot will immediately forfeit the match.
 
 ## B. General Specifications
 
