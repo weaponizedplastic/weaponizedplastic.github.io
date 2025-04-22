@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "About Weaponized Plastic"
+date:   2025-04-22 12:00:00 -0400
+categories: about
+---
+
+# About Weaponized Plastic Fighting League
+
+The rules are pretty simple: build small fighting robots primarily from 3d printed
+parts. Fabrication is easier, and the damage to our electronics and batteries is
+minimized. Back in 2015, we started running these events at Fetch Robotics - a few
+videos are posted below.
+
+After a many year hiatus, we're building a new arena. We'll be hosting a first
+event in central New Hampshire (about an hour north of Boston) on June 28. If you're
+in the area and interested in competing please send an email to
+weaponizedplastic@gmail.com.
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/228527814?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Weaponized Plastic October 2015"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<iframe width="740" height="422" src="https://www.youtube.com/embed/urHAp1ALPsw?si=15Yv9SPvRJa_Ahd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
