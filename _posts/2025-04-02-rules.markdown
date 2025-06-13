@@ -21,7 +21,7 @@ Note: it is recommended to have a power indicator light and an easily accessed p
 
  1. **ALL WEAPONS MUST BE 3D PRINTED** - that means: NO POLYCARBONATE SHEET GOODS, NO METAL, NO FIRE/EXPLOSIVES, NO FLUIDS, NO EMPS/JAMMING. NO PROJECTILE WEAPONS. Don't be clever here - you will fail safety tech.
  2. Robots should have an active weapon system, actuated by a mechanism other than the drivetrain - robots that lack an active weapon system will generally be scored lower by judges. For the purpose of this section, our definition of "active weapons" follows the [NHRL rules](https://wiki.nhrl.io/wiki/index.php?title=NHRL_Open_Rules_-_2025#Weapon_Systems).
- 3. No metal may be used as a cutting/impact edge in a weapon. All hardware must be recessed within the plastic part - for example, a screw body or head may not be designed to make contact with an opponents robot.
+ 3. No metal may be used as a cutting/impact edge in a weapon - for example, a screw body or head may not be designed to make contact with an opponents robot.
  4. The robot body should be primarily 3d printed (the use of exotic/engineered plastics, such as fiber reinforced plastics, TPU, etc are allowed). Plastic sheet material not exceeding 1mm in thickness may be used to protect electronics, batteries, and drive mechanisms. The use of "weaker than plastic" materials is allowed - for example: paper, cardboard, styrofoam, etc. Metal fasteners may be used, but should not protrude from the body of the robot.
  5. Maximum Weight: 1kg
  6. Maximum Size: must fit in a box 30cm x 30cm x 30cm AT ALL TIMES
