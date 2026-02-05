@@ -1,0 +1,152 @@
+---
+layout: post
+title:  "Tutorial: Building a Robot"
+date:   2026-02-01 12:00:00 -0400
+categories: tutorials
+---
+
+# Overview
+
+This is a brief tutorial on how to build a robot that meets the 2026 Weaponized Plastic rules.
+The tutorial walks through the components used, and why they were selected.
+A full Bill of Materials (BOM) is available at the end of the tutorial for convenience.
+
+# Drive Motors and Wheels
+
+Our basic robot, like most fighting robots, is going to use differential drive.
+This configuration uses two drive motors - when the motors are moving in the
+same direction at the same speed, the robot will go forward or backwards in a
+straight line. When the two motors are moving at different speeds or in different
+directions, the robot will turn.
+
+Many of the robots we built last year used very cheap (~$10) 20mm diameter gear
+motors. These were an unmitigated disaster - almost every one had a gearbox failure,
+with many of them literally exploding into dozens of pieces.
+
+The *Max Brushed - Beetleweight* planetary gearmotors from
+[Repeat Robotics](https://repeat-robotics.com/collections/drive-motors/products/repeat-max-brushed)
+were a significant step up for reliability.
+For our differential drive robot, we will need two of these motors, at a cost of $30 each.
+
+There are numerous options for wheels. Some competitors prefer soft foam aircraft wheels,
+but our tutorial robot will use a harder design from BaneBots. These wheels may not have
+as much traction as the softer foam wheels, but they will last a long time. The
+[BaneBots Wheels](https://banebots.com/t61p-242bp/) also need a
+[BaneBots Hub]().
+Since our motor has a 6mm shaft, that is the hub size we need.
+
+NOTE: the wheels come in a variety of colors, which indicate the durometer (how hard the
+robot is). You can feel free to select a different color, we've merely linked the softest,
+grippiest version here.
+
+# Weapon Drive
+
+One of the challenges of building a 1Kg fighting robot is the overall weight budget.
+Heavier weapon motors will spin up faster and impact your opponent more powerfully,
+but the required components to build a functional robot already consume a good portion
+of the weight budget.
+
+Last year we had good success with a number of different weapon designs all using the same
+[27mm diameter brushless motor](https://www.amazon.com/FEICHAO-Brushless-Aircraft-Multi-Copter-Outrunner/dp/B08DLR79HF).
+These come in a variety of different speeds, denoted by a higher "KV" value. For this
+tutorial we are using an 1800KV speed motor.
+
+Our tutorial robot uses a vertical spinner, which we will design in the *3D Printed Parts*
+section below.
+
+# Battery and Charger
+
+There are numerous very-cheap batteries out there. They can easily explode.
+So we're going to recommend a name brand battery with some built-in added protections to
+avoid overdischarge, etc.
+Be sure to fully read the manual that comes with any battery or charger!
+
+Spektrum batteries have some built-in intelligence, but require a Spektrum-branded charger.
+Our tutorial bot uses an 11.1V battery to take full advantage of our drive motors, but some
+robots may choose to use lower voltage 7.4V batteries. The 1300mAh rating tells us how much
+energy the battery contains when fully charged. Higher numbers would provide longer runtime,
+but 1300mAh should be more than enough for even several matches, and saves on weight when
+compared with larger batteries.
+
+NOTE: Spektrum batteries come with several different sizes of connector - be sure to get the
+IC3 connector version. The smaller IC2 connector is a pain to deal with.
+
+You'll also need a matching pigtail to connect the robot to the battery, and a power switch.
+Both components are called out in the BOM below. The power switch we use allows the robot
+to be turned on and off with a 3/32" hex driver, meaning that we can't accidently hit the
+switch and be turned off during a match.
+
+The Spektrum S100 charger is an inexpensive way to charge your battery. It uses a USB-C
+connector and many of you will already have a high wattage USB-C power supply from a laptop
+or tablet - if not, this is still the cheapest smart charger even with the added cost of a
+USB-C power supply.
+
+# Radios and Electronics
+
+We'll need three pieces of electronics to control our robot:
+
+ 1. Electronic Speed Controller (ESC) for the drive motors.
+ 2. Electronic Speed Controller (ESC) for the weapon motor.
+ 3. Radio with receiver to command the robot.
+
+While you could use two separate motor controllers for the drive motors, it is
+preferable to use a dual motor controller that mixes the two channels together.
+We had good results with the
+[$17 FPVKing controller](https://www.amazon.com/FPVKing-Bidirectional-Brushed-2S-3S-Control/dp/B081LBL42J)
+at the 2025 competition.
+
+The weapon motor is brushless, and so it requires a brushless motor controller.
+[This inexpensive one](https://www.amazon.com/Flycolor-Electric-Controller-Airplane-Brushless/dp/B0C2Z15C2B)
+works well with the chosen weapon motor.
+
+As long as your drive motor ESC can handle the mixing of the two motor channels like
+our recommended one, you only need a very basic transmitter radio. The
+[FLYSKY FS-i6x](https://www.amazon.com/FLYSKY-Transmitter-Controller-Receiver-Upgrade/dp/B07Z8VCB45)
+is a very inexpensive option that was well tested at our 2025 event.
+
+# 3D Printed Parts
+
+TODO symmetric, so it works upside down (although driving is harder)
+
+Using standoffs to connect the two sides
+clamshell design
+
+Highest infill that is under the weight limit - on a Bambu X1C, we used:... TODO
+
+# Hardware, Tools, etc
+
+TODO
+3/32" hex driver
+soldering iron
+
+# Bill of Materials
+
+The items below will require three separate orders from Repeat Robotics, Banebots, and Amazon.
+
+| QTY | Description           | Cost |
+|-----|-----------------------|------|
+| 2   | [Repeat Robotics Max Brushed Motors](https://repeat-robotics.com/collections/drive-motors/products/repeat-max-brushed) | $30.00 |
+| 2   | [Banebots T61, 2-3/8" Wheels](https://banebots.com/t61p-242bp/) | $3.30 |
+| 2   | [Banebots T61, 6mm Shaft Hub](https://banebots.com/t61h-rm61/) | $4.20 |
+| 1   | [FEICHAO A2212 - 1800KV](https://www.amazon.com/FEICHAO-Brushless-Aircraft-Multi-Copter-Outrunner/dp/B08DLR79HF) | $12.99 |
+| 1   | [Dual Motor ESC](https://www.amazon.com/FPVKing-Bidirectional-Brushed-2S-3S-Control/dp/B081LBL42J) | $16.98 |
+| 1   | [Brushless ESC for Weapon Motor](https://www.amazon.com/Flycolor-Electric-Controller-Airplane-Brushless/dp/B0C2Z15C2B) | $16.99 |
+| 1   | [FLYSKY FS-i6x](https://www.amazon.com/FLYSKY-Transmitter-Controller-Receiver-Upgrade/dp/B07Z8VCB45) | $54.99 |
+| 1   | [Spektrum 11.1V 1300mAh Smart Lipo](https://www.amazon.com/Spektrum-11-1V-1300mAh-Smart-LiPo/dp/B08SZ5P7GY) | $36.99 |
+| 1   | [Spektrum S100 1x100W USB-C Smart Charger](https://www.amazon.com/Spektrum-1x100W-USB-C-Charger-SPMXC2090/dp/B0BPFGPHZB) | $32.99 |
+| 1   | Pigtail | $ |
+| 1   | [Fingertech Switch](https://repeat-robotics.com/collections/hardware/products/fingertech-switch) | $9.00 |
+| 1   | [Power Distribution Board (Recommended)](https://repeat-robotics.com/collections/electronics/products/repeat-robotics-power-distribution-board) | $1.50 |
+
+TODO: wire for motors?
+TODO: led ?
+
+# Assembly
+
+TODO: solder the switch into the pigtail
+TODO: solder the pigtail/switch, motor controllers to the power distribution board
+TODO: solder LED to power distribution board
+TODO: solder motors to motor controllers
+TODO: connect RX
+TODO: install motors in frame/weapon
+TODO: assemble clamshell and test
