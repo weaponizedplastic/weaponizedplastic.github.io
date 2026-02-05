@@ -7,6 +7,8 @@ categories: rules
 
 # Rules (Draft as of 2/4/2026)
 
+<span style="background-color:yellow">Changes from 2025 rules are highlighted in YELLOW</span>
+
 ## A. General Safety
 
  1. Robots are only to be powered on **INSIDE THE ARENA**.
@@ -14,8 +16,7 @@ categories: rules
  3. All weapons must have a physical locking mechanism that prevents unintended startup. The locking mechanism must be engaged at all times the robot is outside the arena.
  4. Robots must be failsafe: when the radio is switched off, they must spin down all weapons and cease all movement.
  5. Battery voltages must not exceed 50V. Batteries must be protected from direct hit. If at any time during a match, the battery becomes exposed the robot will immediately forfeit the match.
-
-Note: it is recommended to have a power indicator light and an easily accessed power switch. These will likely be required at future events.
+ 6. <span style="background-color:yellow">Robots must have a power indicator light and an easily accessed power switch.</span>
 
 ## B. General Specifications
 
@@ -23,24 +24,25 @@ Note: it is recommended to have a power indicator light and an easily accessed p
  2. Robots should have an active weapon system, actuated by a mechanism other than the drivetrain - robots that lack an active weapon system will generally be scored lower by judges. For the purpose of this section, our definition of "active weapons" follows the [NHRL rules](https://wiki.nhrl.io/wiki/index.php?title=NHRL_Open_Rules_-_2025#Weapon_Systems).
  3. No metal may be used as a cutting/impact edge in a weapon - for example, a screw body or head may not be designed to make contact with an opponents robot.
  4. The robot body should be primarily 3d printed (the use of exotic/engineered plastics, such as fiber reinforced plastics, TPU, etc are allowed). Plastic sheet material not exceeding 1mm in thickness may be used to protect electronics, batteries, and drive mechanisms. The use of "weaker than plastic" materials is allowed - for example: paper, cardboard, styrofoam, etc. Metal fasteners may be used, but should not protrude from the body of the robot.
+ 5. <span style="background-color:yellow">Robots may not be hazardous to the arena. In particular, a robot which is uncontrollably bouncing off the arena walls may be disqualified at the discretion of any judge.</span>
  5. Maximum Weight: 1kg
  6. Maximum Size: must fit in a box 30cm x 30cm x 30cm AT ALL TIMES
- 7. Radios must use the following frequencies: TODO.
 
 ## C. Arena Specifications
 
  1. Arena is approximately 4ft x 4ft x 2ft tall.
  2. Floor is plywood, painted black. Walls are 1/4" Polycarbonate.
+ 3. <span style="background-color:yellow">The edge of the arena will be lined by a sacrificial 1x4 pine edge, painted black.</span>
 
 ## D. Combat Rules
 
  1. Each match will last for 3 minutes.
  2. Brackets will generally be double elimination.
  3. A competitor may forfeit at any time to prevent further damage to their robot.
- 4. If a robot appears incapacitated, judges will start a 10 second count down. If the robot fails to move during this 10 second window, it will forfeit the match.
- 5. A robot may only pin and hold a robot for 15 seconds. Judges will instruct competitors when they must separate.
+ 4. If a robot appears incapacitated, judges will start a 10 second count down. If the robot fails to move during this 10 second window, it will forfeit the match. <span style="background-color:yellow">If both robots are stuck or stuck together, a judge may pause the match to manually unstick the robots.</span>
+ 5. A robot may only pin and hold a robot for <span style="background-color:yellow">10</span> seconds. Judges will instruct competitors when they must separate.
  6. In the event that both robot survive the full match, judges shall decide the winner.
- 7. We aim to keep the arena quite active and avoid downtime - competitors should keep this in mind when selecting battery chargers and quantity of batteries to bring. Competitors will have at least 15 minutes between matches, and will not have more than two matches within an hour block of time.
+ 7. We aim to keep the arena quite active and avoid downtime - competitors should keep this in mind when selecting battery chargers and quantity of batteries to bring. Competitors will have at least 15 minutes between matches, and will not have more than two matches within any one hour block of time.
 
 ## E. Further Information
 
