@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tutorial: Building a Robot"
-date:   2026-02-01 12:00:00 -0400
+date:   2026-03-01 12:00:00 -0400
 categories: tutorials
 ---
 
@@ -34,7 +34,7 @@ There are numerous options for wheels. Some competitors prefer soft foam aircraf
 but our tutorial robot will use a harder design from BaneBots. These wheels may not have
 as much traction as the softer foam wheels, but they will last a long time. The
 [BaneBots Wheels](https://banebots.com/t61p-242bp/) also need a
-[BaneBots Hub]().
+[BaneBots Hub](https://banebots.com/t61h-rm61/).
 Since our motor has a 6mm shaft, that is the hub size we need.
 
 NOTE: the wheels come in a variety of colors, which indicate the durometer (how hard the
@@ -112,7 +112,12 @@ TODO: picture of 3d printed parts
 
 The mechanical design of the robot has the following features:
 
- * TODO: easy open design, limited hardware, etc
+ * Limited amount of expensive hardware and fasteners.
+ * Easy to assemble and repair. The top and bottom plates sandwich all the components
+   together with a few standoffs. These standoffs also act as a clamshell of sorts
+   which reduces the risk of the 3D printed parts delaminating along the layer lines.
+ * Symmetric body - you can still drive when inverted (although the actual control
+   will be all backwards to the operator).
  * The weapon is mounted directly to the motor, avoiding the need for belts, pulleys
    and any tensioning mechanism. The downside is that the motor will take more of the
    brunt of impacts. Similar to the body, the weapon has a set of screws that hold the
@@ -122,7 +127,7 @@ The mechanical design of the robot has the following features:
 When printing the robot body and weapon, we want to use the highest infill possible,
 while staying under the weight limit. On my Bambu X1C, I used the following settings:
 
- * TODO
+ * TODO: final settings for parts
 
 # Hardware, Tools, etc
 
@@ -132,13 +137,21 @@ soldering iron
 
 # Bill of Materials
 
-The items below will require three separate orders from Repeat Robotics, Banebots, and Amazon.
+The items below will require four separate orders from Repeat Robotics, Banebots, Amazon and McMaster:
 
 | QTY | Description           | Cost (ea.) |
 |-----|-----------------------|------------|
 | 2   | [Repeat Robotics Max Brushed Motors](https://repeat-robotics.com/collections/drive-motors/products/repeat-max-brushed) | $30.00 |
+| 1   | [Fingertech Switch](https://repeat-robotics.com/collections/hardware/products/fingertech-switch) | $9.00 |
+| 1   | [Power Distribution Board](https://repeat-robotics.com/collections/electronics/products/repeat-robotics-power-distribution-board) | $1.50 |
+
+| QTY | Description           | Cost (ea.) |
+|-----|-----------------------|------------|
 | 2   | [Banebots T61, 2-3/8" Wheels](https://banebots.com/t61p-242bp/) | $3.30 |
 | 2   | [Banebots T61, 6mm Shaft Hub](https://banebots.com/t61h-rm61/) | $4.20 |
+
+| QTY | Description           | Cost (ea.) |
+|-----|-----------------------|------------|
 | 1   | [FEICHAO A2212 - 1800KV](https://www.amazon.com/FEICHAO-Brushless-Aircraft-Multi-Copter-Outrunner/dp/B08DLR79HF) | $12.99 |
 | 1   | [Dual Motor ESC](https://www.amazon.com/FPVKing-Bidirectional-Brushed-2S-3S-Control/dp/B081LBL42J) | $16.98 |
 | 1   | [Brushless ESC for Weapon Motor](https://www.amazon.com/Flycolor-Electric-Controller-Airplane-Brushless/dp/B0C2Z15C2B) | $16.99 |
@@ -146,46 +159,68 @@ The items below will require three separate orders from Repeat Robotics, Banebot
 | 1   | [Spektrum 11.1V 1300mAh Smart Lipo](https://www.amazon.com/Spektrum-11-1V-1300mAh-Smart-LiPo/dp/B08SZ5P7GY) | $36.99 |
 | 1   | [Spektrum S100 1x100W USB-C Smart Charger](https://www.amazon.com/Spektrum-1x100W-USB-C-Charger-SPMXC2090/dp/B0BPFGPHZB) | $32.99 |
 | 1   | [Spektrum IC3 Pigtail](https://www.amazon.com/Spektrum-Device-Charge-Bullets-SPMXCA304/dp/B07HP48Y1B) | $10.99 |
-| 1   | [Fingertech Switch](https://repeat-robotics.com/collections/hardware/products/fingertech-switch) | $9.00 |
-| 1   | [Power Distribution Board (Recommended)](https://repeat-robotics.com/collections/electronics/products/repeat-robotics-power-distribution-board) | $1.50 |
+| 1   | [6804 20x32x7mm Bearing](https://www.amazon.com/uxcell-6804-2RS-Bearing-20x32x7mm-Bearings/dp/B07TJFK68V) | $9.99 for QTY5 |
+| 1   | [LED 12V, 6mm Hole](https://www.amazon.com/dp/B0BDLM785W) | $9.49 for QTY10 |
+| 1   | [Kapton Tape (20mm)](https://www.amazon.com/Resistant-Sublimation-Temperature-Electronics-Polyimide/dp/B07FQMLKB7/) | $5.99 |
 
-TODO: wire for motors?
-TODO: led ?
+TODO: wire for motors
 
-Hardware for Horizontal Spinner
-(1) 6804 20x32x7mm bearing
-(5) M3 Hex Nut (for weapon, stabilzation)
-(4) M3x30mm SHCS (for weapon)
-(4) M3x?? FHCS for attaching weapon motor
-(9) M3x12 FHCS for body standoffs, weapon stabilization
-(4) M3x45 standoffs
+TODO: tie strap
+
+TODO: M2 hardware for the power switch
+
+For the hardware below, from McMaster, most of the parts are sold in quantities
+of 50 or 100. The QTY column refers to how many actual screws you will need from
+the 50 or 100 you order.
+
+| QTY | Description           | Cost (ea.) | Where Used |
+|-----|-----------------------|------------|------------|
+| 5   | [M3 Hex Nut](https://www.mcmaster.com/90591A250/) | $2.81 for QTY100 | Top plate (1) and weapon (4) |
+| 4   | [M3 x 30mm SHCS](https://www.mcmaster.com/91292A022/) | $5.18 for QTY50 | Weapon |
+| 4   | [M3 x 8mm FHCS](https://www.mcmaster.com/92125A128/) | $6.42 for QTY100 | Attaching weapon motor to bottom plate |
+| 9   | [M3 x 12mm FHCS](https://www.mcmaster.com/92125A132/) | $6.19 for QTY100 | Body standoffs (8) and top plate (1) |
+| 4   | [M3 x 45mm Standoff](https://www.mcmaster.com/95947A072/) | $1.49 each | Attaching top/bottom to body |
 
 # Assembly
 
-TODO: solder the switch into the pigtail
-TODO: solder the pigtail/switch, motor controllers to the power distribution board
-TODO: solder LED to power distribution board
-TODO: solder motors to motor controllers
-TODO: connect RX
-TODO: install motors in frame/weapon
-TODO: assemble clamshell and test
+## 1. Solder Battery Pigtail
 
+First, we will connect the hot side of the battery pigtail to the power switch.
+The ground side will then be connected to the BAT- connection on the power distribution board.
 
-# 3D Printed Parts (Vertical Spinner - Maybe delete this?)
+An extra piece of wire will be used to connct the other side of the power switch
+to the BAT+ connection on the power distribution board.
 
-TODO: Picture
+## 2. Solder Motor Controller
 
-The mechanical design of the vertical spinner tutorial bot has the following features:
+Connect the motor controller power to the power distribution board.
 
- * Symmetric body - you can still drive when inverted (although the actual control
-   will be all backwards to the operator, and the weapon will be upside down).
- * The two main parts of the body are a clamshell, with a pair of standoffs embedded
-   in the plastic. This sort of design uses the screws and standoffs to hold the 3D
-   printed layers together, since delamination of the layers is a big risk.
+## 3. Solder LED
 
-6002 15x32x9 bearing - https://www.amazon.com/15x32x9mm-Pre-Lubricated-Performance-Effective-Bearings/dp/B0FD9TKG71 - $9.59 for 10
-(8) M2x8mm? (for motors)
-(5) M3 Hex Nuts (for weapon)
-(4) M3x40mm SHCS (for weapon)
-(2) M3x50mm 6mm hex standoff
-(4) M3x65mm SHCS (for standoffs)
+The LED will be connected to the power distribution board so we know when the robot is ON.
+Be sure to pass the LED through the 3D printed body part before connecting it.
+
+## 4. Solder Motors
+
+Trim the connectors of the motor controller and solder to the motors.
+
+## 5. Install Motors
+
+Install the motors into the frame and weapon.
+
+For the weapon, you will want to wrap some kapton tape around the motor to create a friction
+fit inside the weapon:
+
+Tie strap the motor wires down:
+
+## 6. Connect Receiver Electronics
+
+TODO
+
+## 7. Final Assembly
+
+Connect battery, assemble clamshell
+
+## 8. Test Drive
+
+TODO
