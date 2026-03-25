@@ -129,6 +129,11 @@ while staying under the weight limit. On my Bambu X1C, I used the following sett
 
  * TODO: final settings for parts
 
+There are some options here for customizing the robot - primarily the weapon shape can easily be
+adjusted - the 3D printed files include several different options:
+
+TODO: picture of different weapon shapes
+
 # Hardware, Tools, etc
 
 TODO
@@ -137,7 +142,8 @@ soldering iron
 
 # Bill of Materials
 
-The items below will require four separate orders from Repeat Robotics, Banebots, Amazon and McMaster:
+The items below will require four separate orders from Repeat Robotics, Banebots, Amazon and McMaster.
+Each robot costs $299.93, plus $32.99 for a charger and the cost of 3D printed parts.
 
 | QTY | Description           | Cost (ea.) |
 |-----|-----------------------|------------|
@@ -167,19 +173,21 @@ TODO: wire for motors
 
 TODO: tie strap
 
-TODO: M2 hardware for the power switch
-
 For the hardware below, from McMaster, most of the parts are sold in quantities
 of 50 or 100. The QTY column refers to how many actual screws you will need from
 the 50 or 100 you order.
 
 | QTY | Description           | Cost (ea.) | Where Used |
 |-----|-----------------------|------------|------------|
+| 2   | [M2 Hex Nut](https://www.mcmaster.com/90591A265/) | $2.22 for QTY100 | Power switch |
+| 10  | [M2 Washer](https://www.mcmaster.com/93475A195/) | $1.78 for QTY100 | Power switch (2) and motors (8) |
+| 10  | [M2 x 10mm SHCS](https://www.mcmaster.com/91292A833/) | $6.97 for QTY100 | Power switch (2) and motors (8) |
 | 5   | [M3 Hex Nut](https://www.mcmaster.com/90591A250/) | $2.81 for QTY100 | Top plate (1) and weapon (4) |
 | 4   | [M3 x 30mm SHCS](https://www.mcmaster.com/91292A022/) | $5.18 for QTY50 | Weapon |
 | 4   | [M3 x 8mm FHCS](https://www.mcmaster.com/92125A128/) | $6.42 for QTY100 | Attaching weapon motor to bottom plate |
 | 9   | [M3 x 12mm FHCS](https://www.mcmaster.com/92125A132/) | $6.19 for QTY100 | Body standoffs (8) and top plate (1) |
 | 4   | [M3 x 45mm Standoff](https://www.mcmaster.com/95947A072/) | $1.49 each | Attaching top/bottom to body |
+| 1   | [Ring Grip Quick Release Pin](https://www.mcmaster.com/98320A015/) | $1.90 each | Safety pin to lock weapon |
 
 # Assembly
 
