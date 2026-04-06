@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "2026 Event, 2025 Video"
+date:   2026-04-06 12:00:00 -0400
+categories: about
+---
+
+Our 2026 event in central New Hampshire is just two months away - June 6, 2026.
+If you're in the area, not yet on our mailing list, and interested in competing
+please send an email to weaponizedplastic@gmail.com.
+
+To get everyone ready, here's the newly released highlight reel from the 2025
+event:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iy2RzuBVHhQ?si=Mey12bk2GbH7Km3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
