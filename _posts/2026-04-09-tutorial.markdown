@@ -246,6 +246,9 @@ The yellow channel of the dual motor controller should be wired to channel 2:
 Ensure that the power switch is OFF and then connect the battery and close up the clamshell.
 Secure the top plate with four screws.
 
+Be sure to install the safety pin through the top plate into the weapon whenever the robot
+is outside of the arena!
+
 ## 8. Test Drive
 
 Test your robot away from people. Turn on the radio first, then the robot. The left joystick
