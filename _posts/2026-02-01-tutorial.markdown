@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Tutorial: Building a Robot"
-date:   2026-03-01 12:00:00 -0400
+date:   2026-04-09 12:00:00 -0400
 categories: tutorials
 ---
+
+PLEASE NOTE: THIS IS STILL A DRAFT! MORE PHOTOS OF ASSEMBLY ARE COMING
 
 # Overview
 
@@ -11,7 +13,7 @@ This is a brief tutorial on how to build a robot that meets the 2026 Weaponized 
 The tutorial walks through the components used, and why they were selected.
 A full Bill of Materials (BOM) is available at the end of the tutorial for convenience.
 
-TODO: photo of robot
+<img src="/{{ site.baseurl }}assets/tutorial_bot.png"/>
 
 # Drive Motors and Wheels
 
@@ -93,7 +95,9 @@ We'll need three pieces of electronics to control our robot:
 
 While you could use two separate motor controllers for the drive motors, it is
 preferable to use a dual motor controller that mixes the two channels together.
-We had good results with the
+This tutorial uses the
+[Repeat Robotics Dominion Dual ESC](https://repeat-robotics.com/collections/electronics/products/dominion-dual-brushed-drive-esc),
+but we also had good results with the slightly lower cost
 [$17 FPVKing controller](https://www.amazon.com/FPVKing-Bidirectional-Brushed-2S-3S-Control/dp/B081LBL42J)
 at the 2025 competition.
 
@@ -108,7 +112,7 @@ is a very inexpensive option that was well tested at our 2025 event.
 
 # 3D Printed Parts
 
-TODO: picture of 3d printed parts
+<img src="/{{ site.baseurl }}assets/tut-plastic.png" width="60%"/>
 
 The mechanical design of the robot has the following features:
 
@@ -129,25 +133,28 @@ while staying under the weight limit. On my Bambu X1C, I used the following sett
 
  * TODO: final settings for parts
 
-There are some options here for customizing the robot - primarily the weapon shape can easily be
-adjusted - the 3D printed files include several different options:
-
-TODO: picture of different weapon shapes
+There are some options here for customizing the robot - you can print the robot in different
+colors, the weapon shape can easily be adjusted.
 
 # Hardware, Tools, etc
 
-TODO
-3/32" hex driver
-soldering iron
+Several tools will be required to build the robot:
+
+ * Soldering iron for assembling the electronics
+ * Wire cutter/stripper
+ * 1/16" hex driver for wheel assembly
+ * 3/32" hex driver for power switch
+ * 1.5mm hex driver for M2 screws
+ * 2.0mm hex driver for M3 screws
 
 # Bill of Materials
 
 The items below will require four separate orders from Repeat Robotics, Banebots, Amazon and McMaster.
-Each robot costs $299.93, plus $32.99 for a charger and the cost of 3D printed parts.
 
 | QTY | Description           | Cost (ea.) |
 |-----|-----------------------|------------|
 | 2   | [Repeat Robotics Max Brushed Motors](https://repeat-robotics.com/collections/drive-motors/products/repeat-max-brushed) | $30.00 |
+| 1   | [Repeat Robotics Dominion Dual ESC](https://repeat-robotics.com/collections/electronics/products/dominion-dual-brushed-drive-esc) | $27.50 |
 | 1   | [Fingertech Switch](https://repeat-robotics.com/collections/hardware/products/fingertech-switch) | $9.00 |
 | 1   | [Power Distribution Board](https://repeat-robotics.com/collections/electronics/products/repeat-robotics-power-distribution-board) | $1.50 |
 
@@ -159,7 +166,6 @@ Each robot costs $299.93, plus $32.99 for a charger and the cost of 3D printed p
 | QTY | Description           | Cost (ea.) |
 |-----|-----------------------|------------|
 | 1   | [FEICHAO A2212 - 1800KV](https://www.amazon.com/FEICHAO-Brushless-Aircraft-Multi-Copter-Outrunner/dp/B08DLR79HF) | $12.99 |
-| 1   | [Dual Motor ESC](https://www.amazon.com/FPVKing-Bidirectional-Brushed-2S-3S-Control/dp/B081LBL42J) | $16.98 |
 | 1   | [Brushless ESC for Weapon Motor](https://www.amazon.com/Flycolor-Electric-Controller-Airplane-Brushless/dp/B0C2Z15C2B) | $16.99 |
 | 1   | [FLYSKY FS-i6x](https://www.amazon.com/FLYSKY-Transmitter-Controller-Receiver-Upgrade/dp/B07Z8VCB45) | $54.99 |
 | 1   | [Spektrum 11.1V 1300mAh Smart Lipo](https://www.amazon.com/Spektrum-11-1V-1300mAh-Smart-LiPo/dp/B08SZ5P7GY) | $36.99 |
@@ -168,10 +174,7 @@ Each robot costs $299.93, plus $32.99 for a charger and the cost of 3D printed p
 | 1   | [6804 20x32x7mm Bearing](https://www.amazon.com/uxcell-6804-2RS-Bearing-20x32x7mm-Bearings/dp/B07TJFK68V) | $9.99 for QTY5 |
 | 1   | [LED 12V, 6mm Hole](https://www.amazon.com/dp/B0BDLM785W) | $9.49 for QTY10 |
 | 1   | [Kapton Tape (20mm)](https://www.amazon.com/Resistant-Sublimation-Temperature-Electronics-Polyimide/dp/B07FQMLKB7/) | $5.99 |
-
-TODO: wire for motors
-
-TODO: tie strap
+| 1   | [22AWG wire, 10ft ea of black and red](https://www.amazon.com/Electrical-Gauge-Silicone-Cable-Black/dp/B0746HG158) | $5.18 |
 
 For the hardware below, from McMaster, most of the parts are sold in quantities
 of 50 or 100. The QTY column refers to how many actual screws you will need from
@@ -189,8 +192,6 @@ the 50 or 100 you order.
 | 4   | [M3 x 45mm Standoff](https://www.mcmaster.com/95947A072/) | $1.49 each | Attaching top/bottom to body |
 | 1   | [Ring Grip Quick Release Pin](https://www.mcmaster.com/98320A015/) | $1.90 each | Safety pin to lock weapon |
 
-# Assembly
-
 ## 1. Solder Battery Pigtail
 
 First, we will connect the hot side of the battery pigtail to the power switch.
@@ -201,7 +202,7 @@ to the BAT+ connection on the power distribution board.
 
 ## 2. Solder Motor Controller
 
-Connect the motor controller power to the power distribution board.
+Connect the motor controller power cables to the power distribution board.
 
 ## 3. Solder LED
 
@@ -212,23 +213,41 @@ Be sure to pass the LED through the 3D printed body part before connecting it.
 
 Trim the connectors of the motor controller and solder to the motors.
 
+TODO: photo showing the orientation
+
 ## 5. Install Motors
 
-Install the motors into the frame and weapon.
+Install the motors into the frame and weapon. Install the bearing into the weapon.
+
+OPTIONAL: you may want to cut the drive motor shafts down as they are a bit long.
+If you don't have access to a hacksaw they will just stick out past the wheels - this is fine.
+
+OPTIONAL: cutting the small shaft off the top of the weapon motor will allow you
+to install a screw and hex nut into the top plate of the robot directly
+over the motor. This can improve the reliability of the weapon as it prevents
+the layers of the top plate from separating where they mesh with the bearing.
 
 For the weapon, you will want to wrap some kapton tape around the motor to create a friction
 fit inside the weapon:
 
-Tie strap the motor wires down:
+<img src="/{{ site.baseurl }}assets/tut-weapon-kapton.png" width="60%"/>
+
+Tie strap the motor wires down.
 
 ## 6. Connect Receiver Electronics
 
-TODO
+The dual motor controller occupies channel 1 and 2, while the motor controller is channel 3.
+The yellow channel of the dual motor controller should be wired to channel 2:
+
+<img src="/{{ site.baseurl }}assets/tut-rx-wiring.png" width="60%"/>
 
 ## 7. Final Assembly
 
-Connect battery, assemble clamshell
+Ensure that the power switch is OFF and then connect the battery and close up the clamshell.
+Secure the top plate with four screws.
 
 ## 8. Test Drive
 
-TODO
+Test your robot away from people. Turn on the radio first, then the robot. The left joystick
+controls the weapon - move the throttle up to spin the weapon faster. The right joystick
+is used for driving the robot.
