@@ -67,10 +67,11 @@ Be sure to fully read the manual that comes with any battery or charger!
 
 Spektrum batteries have some built-in intelligence, but require a Spektrum-branded charger.
 Our tutorial bot uses an 11.1V battery to take full advantage of our drive motors, but some
-robots may choose to use lower voltage 7.4V batteries. The 1300mAh rating tells us how much
-energy the battery contains when fully charged. Higher numbers would provide longer runtime,
-but 1300mAh should be more than enough for even several matches, and saves on weight when
-compared with larger batteries.
+robots may choose to use lower voltage 7.4V batteries. The 2200mAh rating tells us how much
+energy the battery contains when fully charged. Higher numbers provide longer runtime and
+the 2200mAh battery should basically last all day. Some competitors have had good success
+with smaller 1300mAh batteries, which should be more than enough for several matches,
+and saves on weight when compared with larger batteries.
 
 NOTE: Spektrum batteries come with several different sizes of connector - be sure to get the
 IC3 connector version. The smaller IC2 connector is a pain to deal with.
@@ -168,7 +169,7 @@ The items below will require four separate orders from Repeat Robotics, Banebots
 | 1   | [FEICHAO A2212 - 1800KV](https://www.amazon.com/FEICHAO-Brushless-Aircraft-Multi-Copter-Outrunner/dp/B08DLR79HF) | $12.99 |
 | 1   | [Brushless ESC for Weapon Motor](https://www.amazon.com/Flycolor-Electric-Controller-Airplane-Brushless/dp/B0C2Z15C2B) | $16.99 |
 | 1   | [FLYSKY FS-i6x](https://www.amazon.com/FLYSKY-Transmitter-Controller-Receiver-Upgrade/dp/B07Z8VCB45) | $54.99 |
-| 1   | [Spektrum 11.1V 1300mAh Smart Lipo](https://www.amazon.com/Spektrum-11-1V-1300mAh-Smart-LiPo/dp/B08SZ5P7GY) | $36.99 |
+| 1   | [Spektrum 11.1V 2200mAh Smart Lipo](https://www.amazon.com/Spektrum-11-1V-2200mAh-Smart-LiPo/dp/B08TKJVP9J) | $34.99 |
 | 1   | [Spektrum S100 1x100W USB-C Smart Charger](https://www.amazon.com/Spektrum-1x100W-USB-C-Charger-SPMXC2090/dp/B0BPFGPHZB) | $32.99 |
 | 1   | [Spektrum IC3 Pigtail](https://www.amazon.com/Spektrum-Device-Charge-Bullets-SPMXCA304/dp/B07HP48Y1B) | $10.99 |
 | 1   | [6804 20x32x7mm Bearing](https://www.amazon.com/uxcell-6804-2RS-Bearing-20x32x7mm-Bearings/dp/B07TJFK68V) | $9.99 for QTY5 |
@@ -187,8 +188,7 @@ the 50 or 100 you order.
 | 10  | [M2 x 10mm SHCS](https://www.mcmaster.com/91292A833/) | $6.97 for QTY100 | Power switch (2) and motors (8) |
 | 5   | [M3 Hex Nut](https://www.mcmaster.com/90591A250/) | $2.81 for QTY100 | Top plate (1) and weapon (4) |
 | 4   | [M3 x 30mm SHCS](https://www.mcmaster.com/91292A022/) | $5.18 for QTY50 | Weapon |
-| 4   | [M3 x 8mm FHCS](https://www.mcmaster.com/92125A128/) | $6.42 for QTY100 | Attaching weapon motor to bottom plate |
-| 9   | [M3 x 12mm FHCS](https://www.mcmaster.com/92125A132/) | $6.19 for QTY100 | Body standoffs (8) and top plate (1) |
+| 13  | [M3 x 10mm FHCS](https://www.mcmaster.com/92125A130/) | $8.04 for QTY100 | Attaching weapon motor to bottom plate (4), body standoffs (8) and top plate (1)|
 | 4   | [M3 x 45mm Standoff](https://www.mcmaster.com/95947A072/) | $1.49 each | Attaching top/bottom to body |
 | 1   | [Ring Grip Quick Release Pin](https://www.mcmaster.com/98320A015/) | $1.90 each | Safety pin to lock weapon |
 
