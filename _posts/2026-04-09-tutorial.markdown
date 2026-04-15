@@ -157,7 +157,7 @@ The items below will require four separate orders from Repeat Robotics, Banebots
 | 2   | [Repeat Robotics Max Brushed Motors](https://repeat-robotics.com/collections/drive-motors/products/repeat-max-brushed) | $30.00 |
 | 1   | [Repeat Robotics Dominion Dual ESC](https://repeat-robotics.com/collections/electronics/products/dominion-dual-brushed-drive-esc) | $27.50 |
 | 1   | [Fingertech Switch](https://repeat-robotics.com/collections/hardware/products/fingertech-switch) | $9.00 |
-| 1   | [Power Distribution Board](https://repeat-robotics.com/collections/electronics/products/repeat-robotics-power-distribution-board) | $1.50 |
+| 1   | [Power Distribution Board](https://repeat-robotics.com/collections/electronics/products/repeat-robotics-power-distribution-board) | $6.00 for QTY5 |
 
 | QTY | Description           | Cost (ea.) |
 |-----|-----------------------|------------|
