@@ -238,7 +238,11 @@ of red and black on the dual motor controller matches the image below:
 
 <img src="/{{ site.baseurl }}assets/tutorial/motors.jpeg"/>
 
-Wrap the motor controller with Kapton tape to prevent shorts.
+We also need to solder the jumper on the motor controller in order to enable mixing:
+
+<img src="/{{ site.baseurl }}assets/tutorial/solder-jumper.png"/>
+
+Finally, wrap the motor controller with Kapton tape to prevent shorts.
 
 ## 4. Assemble Weapon
 
