@@ -5,15 +5,13 @@ date:   2026-04-09 12:00:00 -0400
 categories: tutorials
 ---
 
-PLEASE NOTE: THIS IS STILL A DRAFT! MORE PHOTOS OF ASSEMBLY ARE COMING
-
 # Overview
 
 This is a brief tutorial on how to build a robot that meets the 2026 Weaponized Plastic rules.
 The tutorial walks through the components used, and why they were selected.
 A full Bill of Materials (BOM) is available at the end of the tutorial for convenience.
 
-<img src="/{{ site.baseurl }}assets/tutorial_bot.png"/>
+<img src="/{{ site.baseurl }}assets/tutorial/final.jpeg"/>
 
 # Drive Motors and Wheels
 
@@ -113,7 +111,7 @@ is a very inexpensive option that was well tested at our 2025 event.
 
 # 3D Printed Parts
 
-<img src="/{{ site.baseurl }}assets/tut-plastic.png" width="60%"/>
+<img src="/{{ site.baseurl }}assets/tutorial/parts.jpeg" width="60%"/>
 
 The mechanical design of the robot has the following features:
 
@@ -132,10 +130,19 @@ The mechanical design of the robot has the following features:
 When printing the robot body and weapon, we want to use the highest infill possible,
 while staying under the weight limit. On my Bambu X1C, I used the following settings:
 
- * TODO: final settings for parts
+ * Body: Standard with 3 walls
+ * Top, Bottom and Weapon: Strength profile
 
 There are some options here for customizing the robot - you can print the robot in different
-colors, the weapon shape can easily be adjusted.
+colors, the weapon shape can easily be adjusted. The robot as designed is currently around 850g,
+so there is significant headroom for denser prints, bigger weapons, etc.
+
+Part files:
+
+ * <a href="/{{ site.baseurl }}assets/tutorial/bottom-plate-v1.stl">Botton Plate (v1-4/16/2026)</a>
+ * <a href="/{{ site.baseurl }}assets/tutorial/body-v1.stl">Body (v1-4/16/2026)</a>
+ * <a href="/{{ site.baseurl }}assets/tutorial/top-plate-v1.stl">Top Plate (v1-4/16/2026)</a>
+ * <a href="/{{ site.baseurl }}assets/tutorial/weapon-v1.stl">Weapon (v1-4/16/2026)</a>
 
 # Hardware, Tools, etc
 
@@ -188,69 +195,163 @@ the 50 or 100 you order.
 | 10  | [M2 x 10mm SHCS](https://www.mcmaster.com/91292A833/) | $6.97 for QTY100 | Power switch (2) and motors (8) |
 | 5   | [M3 Hex Nut](https://www.mcmaster.com/90591A250/) | $2.81 for QTY100 | Top plate (1) and weapon (4) |
 | 4   | [M3 x 30mm SHCS](https://www.mcmaster.com/91292A022/) | $5.18 for QTY50 | Weapon |
-| 13  | [M3 x 10mm FHCS](https://www.mcmaster.com/92125A130/) | $8.04 for QTY100 | Attaching weapon motor to bottom plate (4), body standoffs (8) and top plate (1)|
+| 4   | [M3 x 6mm FHCS](https://www.mcmaster.com/92125A126/) | $6.85 for QTY100 | Attaching weapon motor to bottom plate |
+| 9   | [M3 x 12mm FHCS](https://www.mcmaster.com/92125A132/) | $6.19 for QTY100 | Body standoffs (8) and top plate (1) |
 | 4   | [M3 x 45mm Standoff](https://www.mcmaster.com/95947A072/) | $1.49 each | Attaching top/bottom to body |
 | 1   | [Ring Grip Quick Release Pin](https://www.mcmaster.com/98320A015/) | $1.90 each | Safety pin to lock weapon |
 
 ## 1. Solder Battery Pigtail
 
-First, we will connect the hot side of the battery pigtail to the power switch.
-The ground side will then be connected to the BAT- connection on the power distribution board.
+First, gather the electronics components:
 
-An extra piece of wire will be used to connct the other side of the power switch
-to the BAT+ connection on the power distribution board.
+<img src="/{{ site.baseurl }}assets/tutorial/electronics.jpeg"/>
 
-## 2. Solder Motor Controller
+Now, we will connect the hot side of the battery pigtail to the power switch.
 
-Connect the motor controller power cables to the power distribution board.
+ 1. Trim off a short (~1.25") piece of the hot (orange) cable and use it to connect the power switch to the BAT+ connection on the power distribution board
+ 2. Solder the remaining hot side of the battery pigtail to the other terminal of the power switch.
+ 3. Protect the leads on the power switch with some Kapton tape.
+ 4. Connect the ground side of the battery pigtail to the BAT- connection on the power distribution board.
+ 5. Connect the power LED to the smaller BAT+/- terminals on the power distribution board.
 
-## 3. Solder LED
+Your assembly should look like below:
 
-The LED will be connected to the power distribution board so we know when the robot is ON.
-Be sure to pass the LED through the 3D printed body part before connecting it.
+<img src="/{{ site.baseurl }}assets/tutorial/battery_asm.jpeg"/>
 
-## 4. Solder Motors
+## 2. Solder Motor Controllers
 
-Trim the connectors of the motor controller and solder to the motors.
+Now we can connect both motor controllers to the power distribution board.
+Cut the yellow connector off the brushless motor controller and solder to
+the appropriate pads on the back side of the power distribution board.
+Solder the dual motor controller power leads to the power distribution board.
 
-TODO: photo showing the orientation
+<img src="/{{ site.baseurl }}assets/tutorial/electronics-motor-pwr.jpeg"/>
 
-## 5. Install Motors
+You can then wrap the power distribution board in some Kapton tape to protect it
+from shorting out.
 
-Install the motors into the frame and weapon. Install the bearing into the weapon.
+## 3. Solder Motors
 
-OPTIONAL: you may want to cut the drive motor shafts down as they are a bit long.
-If you don't have access to a hacksaw they will just stick out past the wheels - this is fine.
+Using short leads of 22AWG wire, attach the motors to the dual motor controller. Be
+sure that the red wires connect to the red terminals on the motors, and that the order
+of red and black on the dual motor controller matches the image below:
+
+<img src="/{{ site.baseurl }}assets/tutorial/motors.jpeg"/>
+
+Wrap the motor controller with Kapton tape to prevent shorts.
+
+## 4. Assemble Weapon
+
+Install the bearing and weapon motor into the into the plastic weapon part.
+The fit is adjusted by wrapping tape around the motor or bearing. The fit
+for each part should be snug.
+
+<img src="/{{ site.baseurl }}assets/tutorial/weapon-parts.jpeg"/>
+
+Strengthen the weapon by installing (4) M3x30mm Socket Head Cap Screws (SHCS)
+and (4) M3 nuts into the exterior edge of the weapon body. Attach the weapon
+motor to the bottom plate using (4) M3x6mm Flat Head Cap Screws (FHCS).
+
+<img src="/{{ site.baseurl }}assets/tutorial/weapon-asm.jpeg"/>
 
 OPTIONAL: cutting the small shaft off the top of the weapon motor will allow you
 to install a screw and hex nut into the top plate of the robot directly
 over the motor. This can improve the reliability of the weapon as it prevents
 the layers of the top plate from separating where they mesh with the bearing.
 
-For the weapon, you will want to wrap some kapton tape around the motor to create a friction
-fit inside the weapon:
+## 5. Install Drive Motors
 
-<img src="/{{ site.baseurl }}assets/tut-weapon-kapton.png" width="60%"/>
+Install each of the motors into the body using (4) M2 x 10mm SHCS
+and (4) M2 washers each. The motor connected to the "A" set of terminals on
+the motor controller will be your LEFT side motors.
 
-Tie strap the motor wires down.
+Install the power LED in the back wall of the body by sliding the cables through
+the slot and then pulling the LED into position.
+
+The body can then be attached to the base using (4) standoffs and (4) M3x12mm FHCS.
+The power switch can be attached to the body using (2) M2 x 10mm SHCS and (2) M2 nuts.
+
+<img src="/{{ site.baseurl }}assets/tutorial/motor-asm.jpeg"/>
+
+OPTIONAL: you may want to cut the drive motor shafts down as they are a bit long.
+If you don't have access to a hacksaw they will just stick out past the wheels - this is fine.
 
 ## 6. Connect Receiver Electronics
 
-The dual motor controller occupies channel 1 and 2, while the motor controller is channel 3.
-The yellow channel of the dual motor controller should be wired to channel 2:
+The channels are:
 
-<img src="/{{ site.baseurl }}assets/tut-rx-wiring.png" width="60%"/>
+ 1. Dual motor controller - WHITE signal
+ 2. Dual motor controller - YELLOW signal
+ 3. Weapon motor controller
+
+<img src="/{{ site.baseurl }}assets/tutorial/rx-wiring.png"/>
 
 ## 7. Final Assembly
 
 Ensure that the power switch is OFF and then connect the battery and close up the clamshell.
-Secure the top plate with four screws.
+Secure the top plate with (4) M3x12mm FHCS.
+
+<img src="/{{ site.baseurl }}assets/tutorial/battery.jpeg"/>
 
 Be sure to install the safety pin through the top plate into the weapon whenever the robot
 is outside of the arena!
 
-## 8. Test Drive
+<img src="/{{ site.baseurl }}assets/tutorial/insert_pin.jpeg"/>
+
+Always move the weapon throttle (left joystick) to the lowest position before powering anything on.
+
+## 8. Setup Radio
+
+With the safety pin installed and the robot turned ON, we will setup the radio.
+
+First, we need to make sure that if our radio turns off unexpectedly, or loses signal,
+that our robot returns to a safe state. To do that, hold down the OK button to enter the menu,
+shown below:
+
+<img src="/{{ site.baseurl }}assets/tutorial/rx-setup-1.jpeg"/>
+
+From the menu screen, press OK again to enter "System Setup" screen:
+
+<img src="/{{ site.baseurl }}assets/tutorial/rx-setup-2.jpeg"/>
+
+Scroll DOWN to select "RX Setup" and press OK, this will bring up the "RX Setup" screen:
+
+<img src="/{{ site.baseurl }}assets/tutorial/rx-setup-3.jpeg"/>
+
+Scroll DOWN to select "Failsafe" and press OK:
+
+<img src="/{{ site.baseurl }}assets/tutorial/rx-setup-1.jpeg"/>
+
+In this "Failsafe" screen, we wan to enable Channel 1 and 2 with a setting of 0% - this will
+stop the robot drive motors. We need to set Channel 3 to as close to -100% as possible to turn
+off the weapon motor.
+
+For each of the channels, you will press OK to enter the settings for that channel, then use
+UP or DOWN to change the setting from OFF to a number. Make sure the sticks aren't being touched
+and that the weapon throttle (left joystick) is in the DOWN position. To save the setting hold the
+CANCEL button until the menu changes (a quick press will discard the change, you need to HOLD the
+button).
+
+While not essential, it can be helpful to slow down the turning rate. From the main menu, select
+"Function Setup":
+
+<img src="/{{ site.baseurl }}assets/tutorial/endpoints-1.jpeg"/>
+
+Then select "End Points" and press OK:
+
+<img src="/{{ site.baseurl }}assets/tutorial/endpoints-2.jpeg"/>
+
+Changing the endpoints of CH1 to ~60% in each direction will slow the turning rate down and make
+the robot more driveable. If you want to slow the whole robot down, you can also reduce the range
+of CH2:
+
+<img src="/{{ site.baseurl }}assets/tutorial/endpoints-3.jpeg"/>
+
+## 9. Test Drive
 
 Test your robot away from people. Turn on the radio first, then the robot. The left joystick
 controls the weapon - move the throttle up to spin the weapon faster. The right joystick
 is used for driving the robot.
+
+You may find that you need to calibrate the dual motor controller - if that is the case,
+follow the motor controller directions from the manufacturer.
