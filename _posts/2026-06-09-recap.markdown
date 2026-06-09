@@ -48,8 +48,14 @@ We are still trying to figure out how to keep a better schedule, without excessi
 
 We had a bunch of robots get stuck on the lower rail of the arena, I'm planning to fix that for next year with some adjustments to the arena.
 
-We are going to get the pit area closer to the arena next year - so that everyone is closer to
-the action!
+Robots based on our [tutorial]({% post_url 2026-04-09-tutorial %}) did well in the competition.
+There are several lessons learned though:
+
+ * The top side needs some sort of real retention of the weapon and bearing - a good hit can sometimes cause the weapon to tilt.
+ * The weapon motor cables need better protection.
+ * There is a bit of weight left, and all of it should be used to add more infill to the weapon.
+
+We are also going to get the pit area closer to the arena next year - so that everyone is closer to the action!
 
 -Fergs
 
