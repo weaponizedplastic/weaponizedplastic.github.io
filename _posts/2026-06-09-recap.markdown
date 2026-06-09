@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "June 2026 Event Recap"
+date:   2026-06-09 11:59:00 -0400
+categories: event
+---
+
+This past weekend saw another Weaponized Plastic competition held in New Hampshire.
+There were 14 entries (12 are shown below, an additional two showed up a bit late for the group photo).
+There are few things worse than Monday Morning Quarterbacking, but I was too busy yesterday, so here we go with Tuesday Morning Quarterbacking.
+
+<center>
+<img src="/{{ site.baseurl }}assets/2026/group.jpg" width="75%"/>
+</center>
+<br>
+
+We ran a total of 26 matches to decide a winner by double elimination.
+The carnage was significantly more extensive than last year.
+Enjoy these shots of plastic getting shredded while you wait for us to drop the highlight reel:
+
+<center>
+<img src="/{{ site.baseurl }}assets/2026/damage0.jpg" width="50%"/><img src="/{{ site.baseurl }}assets/2026/damage1.jpg" width="50%"/>
+</center>
+<br>
+
+In particular, the penultimate match between <i>Drumnado</i>[^1] and <i>Vivian’s Vortex</i> involved a massive hit in which both robots completely shed their weapons.
+With a double-elimination bracket in play, the previously undefeated <i>Drumnado</i> forced a rematch - after a 30 minute intermission to allow both robots to rebuild.
+You can catch a short clip of that hit on our new [Instagram account](https://www.instagram.com/p/DZVffsfxSZO/).
+
+<center>
+<img src="/{{ site.baseurl }}assets/2026/damage2.jpg" width="75%"/>
+</center>
+<br>
+
+The damage to <i>Vivian’s Vortex</i> was so extensive the robot had to be rebuilt with earlier prototype parts, which were not printed as durably as the final robot.
+They got shredded quite badly, but not before <i>Vivian’s Vortex</i> managed to crush the thin Lexan sheet that protects <i>Drumnado</i>’s wheels.
+This led one of the wheels to become inoperable, at which point <i>Drumnado</i> had to rely on the gyro force of the drum spinner to lift the robot and drive on the remaining working wheel.
+
+<center>
+<img src="/{{ site.baseurl }}assets/2026/damage3.jpg" width="75%"/>
+</center>
+<br>
+
+I have a number of thoughts about our future events, but here are some of the big ones:
+
+We originally intended to have matches run from 1PM to about 4PM, but ended up taking almost six hours to run the bracket!
+We are still trying to figure out how to keep a better schedule, without excessively eliminating robots due to time constraints when repairing.
+
+We had a bunch of robots get stuck on the lower rail of the arena, I'm planning to fix that for next year with some adjustments to the arena.
+
+We are going to get the pit area closer to the arena next year - so that everyone is closer to
+the action!
+
+-Fergs
+
+# Footnotes
+
+[^1]: Yes, this robot went by "Issy" during much of the competition, but I think it more than earned the new name after the last match where it had to drive mostly in the air and on one wheel.
