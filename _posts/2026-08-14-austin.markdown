@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Next Up: Austin TX, October 24, 2026"
+date:   2026-08-14 11:59:00 -0400
+categories: event
+---
+
+Weaponized Plastic is hitting the road this fall - with an event at the ASMBLY makerspace in Austin Texas.
+We'll continue to update this page with more info as it comes out - for now, here's the save the date poster:
+
+<center>
+<img src="/{{ site.baseurl }}assets/austin_poster_2026.jpg" width="75%"/>
+</center>
