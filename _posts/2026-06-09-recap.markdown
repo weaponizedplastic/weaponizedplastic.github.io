@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "June 2026 NH Event Recap"
+title:  "Event Recap: June 2026 in New Hampshire"
 date:   2026-06-09 11:59:00 -0400
 categories: event
 ---
